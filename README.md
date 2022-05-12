@@ -2,6 +2,13 @@
 
 Analyze speech and video simultaneously to predict emotions.
 
+## Team Members:
+#### 1)Akriti Jain <br />
+#### 2)Navya Mamoria <br />
+#### 3)Aayush Kumar <br />
+#### 4)Suriya R S <br />
+#### 5)Chaitanya Gupta <br />
+
 ## Introduction
 
 Emotion recognition has become an important topic of research in recent years due to the multiple areas where it can be applied, such as in healthcare or in road safety systems etc. Human emotions can be detected using speech signals, facial expressions and body language. Thus, an algorithm that performs detection, extraction, and evaluation of these features will allow for automatic recognition of human emotion in images and videos.
@@ -16,24 +23,19 @@ In the last five years, the field of AI has made major progress in almost all it
 
 ### How AI-Emotion Analysis works
 
-On a high level, an AI emotion application or vision system includes the following steps:<br />
+On a high level, an AI emotion application system includes the following steps:<br />
 
-Step #1: Acquire the image frame from a camera feed (IP, CCTV, USB camera). <br />
-Step #2: Preprocessing of the image (cropping, resizing, rotating, color correction).<br />
-Step #3: Extract the important features with a CNN model<br />
+Step #1: Acquire the image frame from a camera feed or extract the audio from .wav file. <br />
+Step #2: Preprocessing of the image/audio file (cropping, resizing, color correction, normalisation).<br />
+Step #3: Extract the important features with a suitable model<br />
 Step #4: Perform emotion classification
 
-## Running the tests
 
-Explain how to run the automated tests for this system
+### Our Approach
 
-### Break down into end to end tests
 
-Explain what these tests test and why
+Since both the audio and video parts are independent of each other, two of us (Akriti and Navya) worked on the audio part and the rest (Aayush, Chaitanya and Suriya) worked on the video model. 
 
-```
-Give an example
-```
 
 ### And coding style tests
 
