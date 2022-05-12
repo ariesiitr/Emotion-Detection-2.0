@@ -1,37 +1,27 @@
 # Emotion-Detection-2.0
-# Project Title
 
-One Paragraph of project description goes here
+Analyze speech and video simultaneously to predict emotions.
 
-## Getting Started
+## Introduction
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Emotion recognition has become an important topic of research in recent years due to the multiple areas where it can be applied, such as in healthcare or in road safety systems etc. Human emotions can be detected using speech signals, facial expressions and body language. Thus, an algorithm that performs detection, extraction, and evaluation of these features will allow for automatic recognition of human emotion in images and videos.
+In the last five years, the field of AI has made major progress in almost all its standard sub-areas, including vision, speech recognition and generation, image and video generation coupled with advancement in various deep learning techniques, now it is possible to predict human emotions with much higher accuracy.
+
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+-Knowledge of various deep learning techniques like CNN, LSTM etc.
+-Some insight into frameworks such as OpenCV, Librosa, Keras, Tensorflow etc
 
-```
-Give examples
-```
 
-### Installing
+### How AI-Emotion Analysis works
 
-A step by step series of examples that tell you how to get a development env running
+On a high level, an AI emotion application or vision system includes the following steps:
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Step #1: Acquire the image frame from a camera feed (IP, CCTV, USB camera).
+Step #2: Preprocessing of the image (cropping, resizing, rotating, color correction).
+Step #3: Extract the important features with a CNN model
+Step #4: Perform emotion classification
 
 ## Running the tests
 
