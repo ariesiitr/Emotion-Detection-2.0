@@ -10,17 +10,17 @@ In the last five years, the field of AI has made major progress in almost all it
 
 ### Prerequisites
 
--Knowledge of various deep learning techniques like CNN, LSTM etc.
+-Knowledge of various deep learning techniques like CNN, LSTM etc. <br />
 -Some insight into frameworks such as OpenCV, Librosa, Keras, Tensorflow etc
 
 
 ### How AI-Emotion Analysis works
 
-On a high level, an AI emotion application or vision system includes the following steps:
+On a high level, an AI emotion application or vision system includes the following steps:<br />
 
-Step #1: Acquire the image frame from a camera feed (IP, CCTV, USB camera).
-Step #2: Preprocessing of the image (cropping, resizing, rotating, color correction).
-Step #3: Extract the important features with a CNN model
+Step #1: Acquire the image frame from a camera feed (IP, CCTV, USB camera). <br />
+Step #2: Preprocessing of the image (cropping, resizing, rotating, color correction).<br />
+Step #3: Extract the important features with a CNN model<br />
 Step #4: Perform emotion classification
 
 ## Running the tests
