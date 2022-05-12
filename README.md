@@ -3,11 +3,11 @@
 Analyze speech and video simultaneously to predict emotions.
 
 ## Team Members:
-#### 1)Akriti Jain <br />
-#### 2)Navya Mamoria <br />
-#### 3)Aayush Kumar <br />
-#### 4)Suriya R S <br />
-#### 5)Chaitanya Gupta <br />
+#### 1)Akriti Jain 
+#### 2)Navya Mamoria 
+#### 3)Aayush Kumar 
+#### 4)Suriya R S 
+#### 5)Chaitanya Gupta 
 
 ## Introduction
 
@@ -33,48 +33,12 @@ Step #4: Perform emotion classification
 
 ### Our Approach
 
+Initially, we were considering multimodal emotion detection method based on the fusion of speech and facial expression. According to the processing of different modal signals in different stages, it can be divided into signal-level fusion, feature-level fusion, decision-level fusion, and hybrid fusion. In this paper, the decision-level fusion method is used to independently inspect and classify the features of each modal and merge the results into a decision vector.
+![](https://www.mdpi.com/sensors/sensors-21-07665/article_deploy/html/images/sensors-21-07665-g001.png)
+![](https://static-01.hindawi.com/articles/wcmc/volume-2021/6971100/figures/6971100.fig.001.svgz)
+However, this approach is highly experimental as researchers are still working in this area to get decent accuracy, therefore on advice from our mentors, we dropped this idea. Finally, we decided to train two independent models and combine their result in the end to predict the emotion based on a live video feed wherein the video will be framed at intervals using OpenCV and the audio will be extracted from the video and used as the speech input.
+Due to the autonomous nature of both the models, two of us (Akriti and Navya) worked on the audio part and the others (Aayush, Chaitanya and Suriya) worked on the video part. 
 
-Since both the audio and video parts are independent of each other, two of us (Akriti and Navya) worked on the audio part and the rest (Aayush, Chaitanya and Suriya) worked on the video model. 
 
 
-### And coding style tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
