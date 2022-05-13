@@ -7,3 +7,5 @@ librosa
 pandas
 sklearn
 opencv-python
+seaborn
+scipy
