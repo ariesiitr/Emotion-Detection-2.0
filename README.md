@@ -146,9 +146,9 @@ We were able to arrive at a result of (MODEL 2) ,
                               val   accuracy 69   percent
                               test  accuracy 68.8 percent
                               
-![img11](https://user-images.githubusercontent.com/94068599/168276924-6d4a542d-44e1-4908-9dd0-9d41122af220.png)
-![Screenshot (308)](https://user-images.githubusercontent.com/94068599/168277073-63b10631-1719-44f8-b999-9678fbd4dad3.png)
-     
+
+ ![image](https://user-images.githubusercontent.com/95056319/168308963-2dda5e2f-7cc7-4ead-9c75-06e31780cd38.png)
+  
 ![image](https://user-images.githubusercontent.com/94068599/168277692-d8fcfd11-fab2-43c2-a511-71e074d346b1.png)
 
 *The BenchMark accuracy on FER2013 dataset till date is 76.82 percent which done by ensemble ResmaskingNet with 6 other CNNs.* 
