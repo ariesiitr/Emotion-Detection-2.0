@@ -1,6 +1,6 @@
 # Emotion-Detection-2.0
 
-Analyze speech and video simultaneously to predict emotions.
+Analyze audio and video to predict emotions.
 
 ## Team Members:
 #### 1)Akriti Jain 
@@ -18,7 +18,7 @@ In the last five years, the field of AI has made major progress in almost all it
 ### Prerequisites
 
 -Knowledge of various deep learning techniques like CNN, LSTM etc. <br />
--Some insight into frameworks such as OpenCV, Librosa, Keras, Tensorflow etc
+-Some insight into frameworks such as OpenCV, Librosa, Keras, Tensorflow etc and python libraries like numpy, pandas, sklearn,etc.
 
 
 ### How AI-Emotion Analysis works
