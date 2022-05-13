@@ -167,7 +167,7 @@ model.add(layers.Dropout(0.25))
 model.add(layers.Dense(num_classes, activation='softmax'))
 model.summary()
 ```
-
+[Training details](https://drive.google.com/drive/folders/1lS0R_Ny0riQzq-02d-FQd5VkkA-lYfJL?usp=sharing)
 
 ### InceptionResNetV2 Architecture
 
