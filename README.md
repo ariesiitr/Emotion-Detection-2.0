@@ -28,7 +28,7 @@ On a high level, an AI emotion application system includes the following steps:<
 Step #1: Acquire the image frame from a camera feed or extract the audio from .wav file. <br />
 Step #2: Preprocessing of the image/audio file (cropping, resizing, color correction, normalisation).<br />
 Step #3: Extract the important features with a suitable model<br />
-Step #4: Perform emotion classification
+Step #4: Perform emotion classificati0n
 
 
 ### Our Approach
