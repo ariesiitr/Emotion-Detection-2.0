@@ -153,6 +153,10 @@ We were able to arrive at a result of (MODEL 2) ,
 
 *The BenchMark accuracy on FER2013 dataset till date is 76.82 percent which done by ensemble ResmaskingNet with 6 other CNNs.* 
 
+## References
 
+1) https://arxiv.org/abs/2004.11823
+2) https://www.kaggle.com/datasets/msambare/fer2013
+3) https://arxiv.org/abs/1602.07261v2
 
 
