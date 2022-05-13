@@ -13,6 +13,22 @@ Analyze audio and video to predict emotions.
 
 Emotion recognition has become an important topic of research in recent years due to the multiple areas where it can be applied, such as in healthcare or in road safety systems etc. Human emotions can be detected using speech signals, facial expressions and body language. Thus, an algorithm that performs detection, extraction, and evaluation of these features will allow for automatic recognition of human emotion in images and videos.
 In the last five years, the field of AI has made major progress in almost all its standard sub-areas, including vision, speech recognition and generation, image and video generation coupled with advancement in various deep learning techniques, now it is possible to predict human emotions with much higher accuracy.
+## Requirements
+*Python 3.6
+*tensorflow
+*matplotlib
+*keras
+*numpy
+*librosa
+*pandas
+*sklearn
+*opencv-python
+*seaborn
+*scipy
+These requirements can be easily downloaded by ```python 
+pip install -r requirements.txt ```
+
+
 ## Scripts
 * #### Visual_FinalModel.ipynb : This script contains model for emotion classification.
 * #### RealTimeEmotionDetection.ipynb: This script contains the code to extract video and predict live emotions .
