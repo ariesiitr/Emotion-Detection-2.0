@@ -29,6 +29,7 @@ In the last five years, the field of AI has made major progress in almost all it
 * opencv-python
 * seaborn
 * scipy
+
 These requirements can be easily downloaded by 
 ```python 
 pip install -r requirements.txt 
