@@ -28,13 +28,13 @@ After requirements have been installed the process from training to testing is f
  * Download haarcascade_frontalface_default.xml
  * Now,using RealTimeEmotionDetection.ipynb you can detect your Emotion . (Update face_classifier and model.load_weights() path)
  
-### Prerequisites
+## Prerequisites
 
 -Knowledge of various deep learning techniques like CNN, LSTM etc. <br />
 -Some insight into frameworks such as OpenCV, Librosa, Keras, Tensorflow etc and python libraries like numpy, pandas, sklearn,etc.
 
 
-### How AI-Emotion Analysis works
+## How AI-Emotion Analysis works
 
 On a high level, an AI emotion application system includes the following steps:<br />
 
@@ -44,7 +44,7 @@ Step #3: Extract the important features with a suitable model<br />
 Step #4: Perform emotion classificati0n
 
 
-### Our Approach
+## Our Approach
 
 Initially, we were considering multimodal emotion detection method based on the fusion of speech and facial expression. According to the processing of different modal signals in different stages, it can be divided into signal-level fusion, feature-level fusion, decision-level fusion, and hybrid fusion. In this paper, the decision-level fusion method is used to independently inspect and classify the features of each modal and merge the results into a decision vector.
 ![](https://www.mdpi.com/sensors/sensors-21-07665/article_deploy/html/images/sensors-21-07665-g001.png)
