@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ## Scripts
 * #### Visual_FinalModel.ipynb : This script contains model for emotion classification.
 * #### RealTimeEmotionDetection.ipynb: This script contains the code to extract video and predict live emotions .
-* #### Audio_final.ipynb : 
+* #### Audio_final.ipynb : file that contains the code for audio analysis of the emotions
 
 ## Usage
 ### From scratch
@@ -247,7 +247,7 @@ For checking the model's accuracy and finding the number of true positives, true
 -The 1D CNN model gave an F1 score of 81% for testing seven emotions that are happy, sad, neutral, disgust, angry, fear, and surprise.
 -Other technologies like LSTM takes a lot more time for training and testing.
 
-### Audio_final.ipynb is the file that contains the code for audio analysis of the emotions.
+
 
 
 
