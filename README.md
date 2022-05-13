@@ -8,6 +8,10 @@ Analyze audio and video to predict emotions.
 * [Aayush Kumar ](https://github.com/aayushk68)
 * [Suriya R S](https://github.com/suriya030)
 * [Chaitanya Gupta](https://github.com/code-x-1318)
+ 
+##Mentors
+* [Agrim Agrawal](https://github.com/Agrim01)
+* [Mohit Kumar Goyal](https://github.com/mohit5075)
 
 ## Introduction
 
