@@ -47,7 +47,8 @@ After requirements have been installed the process from training to testing is f
 
 ### Visual part
  * Download the dataset from [here](https://www.kaggle.com/datasets/msambare/fer2013) .
- * Run Visual_FinalModel.ipynb  file in googlecolab(for faster training). (Update dataset path)
+ * Run Visual_FinalModel.ipynb  file in googlecolab(for faster training). (Update dataset path) / just download the 
+   trained model weights from [here](https://drive.google.com/drive/folders/1lS0R_Ny0riQzq-02d-FQd5VkkA-lYfJL?usp=sharing)
  * Download haarcascade_frontalface_default.xml
  * Now,using RealTimeEmotionDetection.ipynb you can detect your Emotion . (Update face_classifier and model.load_weights() path)
  
