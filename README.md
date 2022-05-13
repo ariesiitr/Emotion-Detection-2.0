@@ -14,11 +14,20 @@ Analyze audio and video to predict emotions.
 Emotion recognition has become an important topic of research in recent years due to the multiple areas where it can be applied, such as in healthcare or in road safety systems etc. Human emotions can be detected using speech signals, facial expressions and body language. Thus, an algorithm that performs detection, extraction, and evaluation of these features will allow for automatic recognition of human emotion in images and videos.
 In the last five years, the field of AI has made major progress in almost all its standard sub-areas, including vision, speech recognition and generation, image and video generation coupled with advancement in various deep learning techniques, now it is possible to predict human emotions with much higher accuracy.
 ## Scripts
-* ### Visual_FinalModel.ipynb : This script contains model for emotion classification.
-* ### RealTimeEmotionDetection.ipynb: This script contains the code to extract video and predict live emotions .
-* ### Audio_final.ipynb : 
+* #### Visual_FinalModel.ipynb : This script contains model for emotion classification.
+* #### RealTimeEmotionDetection.ipynb: This script contains the code to extract video and predict live emotions .
+* #### Audio_final.ipynb : 
 
+## Usage
+### From scratch
+After requirements have been installed the process from training to testing is fairly simple
 
+### Visual part
+ * Download the dataset from [here](https://www.kaggle.com/datasets/msambare/fer2013) .
+ * Run Visual_FinalModel.ipynb  file in googlecolab(for faster training). (Update dataset path)
+ * Download haarcascade_frontalface_default.xml
+ * Now,using RealTimeEmotionDetection.ipynb you can detect your Emotion . (Update face_classifier and model.load_weights() path)
+ 
 ### Prerequisites
 
 -Knowledge of various deep learning techniques like CNN, LSTM etc. <br />
