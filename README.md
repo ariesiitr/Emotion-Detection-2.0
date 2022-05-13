@@ -159,6 +159,62 @@ We were able to arrive at a result of (MODEL 2) ,
 
 *The BenchMark accuracy on FER2013 dataset till date is 76.82 percent which done by ensemble ResmaskingNet with 6 other CNNs.* 
 
+
+
+## Audio Analysis
+ 
+### Workflow
+ 
+Dataset- RAVDESS and TESS
+Software used- Google collab
+Framework-  Sci-kit learn, librosa, and Keras
+Algorithm- 1D CNN and/or LSTM
+Using TensorFlow backend.
+
+#### Step 1- Loading the dataset.
+  
+Firstly, we mounted the datasets on Google drive and unzipped them separately.
+
+#### Step 2- Testing audio files 
+
+Tested one audio file by plotting its waveform and spectrogram.
+
+#### Step 3- Feature Extraction 
+
+The next step involves extracting the features from the audio files, which will help in identifying the components of the audio signal that can easily help to distinguish emotions embedded. For feature extraction, we use the LibROSA library in python, one of the libraries used for audio analysis.
+
+Features extracted- MFCC(Mel-Frequency Cepstral Coefficients) AND Mel spectrogram. 
+ 
+ #### Step 4- Creating a dataframe
+
+Creating a final data frame consisting of features and emotions.
+
+#### Step-5   Splitting the data into test and train sets.
+
+#### Step-6 Data Preprocessing 
+
+Using MinMaxScaler and label encoding emotions of y train and y test set.
+#### Step-7 Building 1D CNN model
+
+We built A 1D CNN model with 12 layers-used ReLu function as our activation function for 4 NN layers and a final layer of NN as a softmax classifier. We also added three dropout layers to prevent overfitting.
+ 
+#### Step-8 Prediction
+
+Predicting the emotions of the Y test.
+
+#### Step-9 Confusion Matrix
+
+For checking the model's accuracy and finding the number of true positives, true negatives, false positives, and false negatives.
+
+### Conclusion
+
+-The 1D CNN model gave an F1 score of 81% for testing seven emotions that are happy, sad, neutral, disgust, angry, fear, and surprise.
+-Other technologies like LSTM takes a lot more time for training and testing.
+
+### Audio_final.ipynb is the file that contains the code for audio analysis of the emotions.
+
+
+
 ## References
 
 * https://arxiv.org/abs/2004.11823
