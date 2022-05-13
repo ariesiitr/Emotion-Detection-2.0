@@ -40,16 +40,24 @@ Initially, we were considering multimodal emotion detection method based on the 
 Due to the autonomous nature of both the models, two of us (Akriti and Navya) worked on the audio part and the others (Aayush, Chaitanya and Suriya) worked on the video part. 
 
 
-### Visual Analysis
+## VISUAL ANALYSIS
 
-### DataSet Used
-## FER 2013
+### Our WorkFlow
+1) Segregating the FER2013 dataset into Train,Test and Validation Dataset
+2) Designing a CNN based Network for classifying emotions .
+3) Training the Network using the Train_dataset.
+4) Obtaining the Results as acc vs epoch and loss vs epoch
+5) Testing the trained model in RealTime.  
+
+### FER 2013
 The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centred and occupies about the same amount of space in each image.The task is to categorize each face based on the emotion shown in the facial expression into one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The training set consists of 28,709 examples and the public test set consists of 3,589 examples.
 
 
 ### Models Used
 First we tried using normal convolutional layers with BatchNorm ,MaxPooling and dropout in between . We used standard filter size of 3 by 3 , padding as 'same' and activation function as relu . For top layers we added a few DenseLayers ,finishing with a 7 layer classifier . As we were able to only achive a 58 % val_accuracy through this model we tried various otherthings. 
-## *Model 1*
+
+### *Model 1*
+First , we started of by building a simple CNN Network with Conv2D, BatchNorm , Dropout and MaxPooling layers. For top layers we added a Dense layers ,toped it with a 7 Neuron classfier  
 ```python
 #Build Model
 model = models.Sequential()
@@ -90,8 +98,15 @@ model.add(layers.Dense(num_classes, activation='softmax'))
 
  model.summary()
 ```
-## *Model 2*
-In this model we are using a well known and well tested architecture made of inception modules with residual links i.e InceptionResnetV2 as our model. Rest of the concepts used are same as the previous one.
+Model 1
+  
+  Train acc 70 percent
+  Val acc   58 percent
+
+As the validation acc is quite low we went for different Network architecture ,one of them is shown below.
+
+### *Model 2*
+In this model we are using a well known and well tested architecture InceptionResnetV2 as our BaseModel. Rest of the concepts used are same as the previous one.
 
 ```python
 InceptionResNetV2=tf.keras.applications.InceptionResNetV2(weights='imagenet',input_shape=input_shape, include_top=False)
@@ -111,7 +126,32 @@ model.add(layers.Dropout(0.25))
 model.add(layers.Dense(num_classes, activation='softmax'))
 model.summary()
 ```
-## InceptionResNetV2 Architecture
+### InceptionResNetV2 Architecture
+
+![](https://www.researchgate.net/profile/Masoud-Mahdianpari/publication/326421398/figure/fig9/AS:649354851385344@1531829669740/Schematic-diagram-of-InceptionResNetV2-model-compressed-view.png)
+
+Inspired from the performance of Inception and ResNet ,the idea of residual links have been introduced into the inception module from InceptionV4 . Based on that 
+3 different InceptionResnet modules were formed namely A,B and C .
+![](https://miro.medium.com/max/1400/1*WyqyCKA4mP1jsl8H4eHrjg.jpeg)
+*(From left) Inception modules A,B,C in an Inception ResNet. Note how the pooling layer was replaced by the residual connection, and also the additional 1x1 convolution before addition. (Source: Inception v4)*
+
+The idea of using multiple convolutional filters and MaxPooling at the sametime towards a featuremap and then combining the results from those multiple operations to form a new feature map forms an inception module(InceptionV1) , doing some minor changes to this to make training faster we will arrive at InceptionV4.
+ResNet-50 is a Network consists of normal convolutional layers with Residual link . what residual link does is feeds the output of a particular layer to input of next to next layer .
+Both of these ideas were used to create InceptionResNetV2.
+
+### Results
+We were able to arrive at a result of (MODEL 2) ,
+                              
+                              Train accuracy 77   percent
+                              val   accuracy 69   percent
+                              test  accuracy 68.8 percent
+                              
+![img11](https://user-images.githubusercontent.com/94068599/168276924-6d4a542d-44e1-4908-9dd0-9d41122af220.png)
+![Screenshot (308)](https://user-images.githubusercontent.com/94068599/168277073-63b10631-1719-44f8-b999-9678fbd4dad3.png)
+     
+![image](https://user-images.githubusercontent.com/94068599/168277692-d8fcfd11-fab2-43c2-a511-71e074d346b1.png)
+
+*The BenchMark accuracy on FER2013 dataset till date is 76.82 percent which done by ensemble ResmaskingNet with 6 other CNNs.* 
 
 
 
