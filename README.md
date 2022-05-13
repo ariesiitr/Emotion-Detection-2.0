@@ -126,6 +126,9 @@ model.add(layers.Dropout(0.25))
 model.add(layers.Dense(num_classes, activation='softmax'))
 model.summary()
 ```
+
+Since FER2013 dataset contains only grayscale images , but our VGG16 model accepts only 3 channel images. So, what we did here is modify the 3 Color channel input to 1 channel input and we modified the kernels used on first layer of 3 channel size to 1 channel by taking average on all corresponding pixels of RGB channels.In addition , we used pretrained weights (transfer learning) on ImageNet Dataset
+
 ### InceptionResNetV2 Architecture
 
 ![](https://www.researchgate.net/profile/Masoud-Mahdianpari/publication/326421398/figure/fig9/AS:649354851385344@1531829669740/Schematic-diagram-of-InceptionResNetV2-model-compressed-view.png)
