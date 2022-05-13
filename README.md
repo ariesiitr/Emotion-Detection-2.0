@@ -153,10 +153,46 @@ We were able to arrive at a result of (MODEL 2) ,
 
 *The BenchMark accuracy on FER2013 dataset till date is 76.82 percent which done by ensemble ResmaskingNet with 6 other CNNs.* 
 
-## References
+## Audio Analysis
+ 
+### Workflow
+ 
+Dataset- RAVDESS and TESS
+Software used- Google collab
+Framework-  Sci-kit learn, librosa, and Keras
+Algorithm- 1D CNN and/or LSTM
+Using TensorFlow backend.
+
+Step 1- Mount the datasets on Google drive and unzip them separately.
+
+Step 2- Test one audio file by plotting its waveform and spectrogram.
+
+Step 3- Feature Extraction 
+The first step in any automatic speech recognition system is to extract features i.e. identify the components of the audio signal that are good for identifying the linguistic content and discarding all the other stuff which carries information like background noise, emotion etc.
+The digital representation of an audio clip can be easily obtained by using Python packages such as Librosa- a music and audio analysis package. The above plot describes the change in amplitude (loudness) of a signal over time domain. The next challenge is extracting the significant features from this wave form that can easily help to distinguish emotions embedded. We have focussed on two features namely Mel-Frequency Cepstral Coefficients (MFCC) and Mel Spectrogram.
+
+Step-4 Creating a data-frame
+
+Step-5 Splitting the data into test and train set
+
+Step-6 Data Preprocessing (using MinMaxScaler)
+
+Step-7 Building 1D CNN model
+
+Step-8  Prediction
+
+Step-9 Confusion Matrix- For checking the accuracy
+
+
+### Conclusion
+1D CNN model gave an F1 score of 81% for testing seven emotions that are happy, sad, neutral, disgust, angry, fear, and surprise.
+ 
+      
+ ## References
 
 1) https://arxiv.org/abs/2004.11823
 2) https://www.kaggle.com/datasets/msambare/fer2013
 3) https://arxiv.org/abs/1602.07261v2
+
 
 
